@@ -41,3 +41,15 @@ The real finding is **asset control**: which accounts a Frisson-owned product ca
 Separately: every vendor account was signed up via `supercreativepeople@gmail.com` with the company name listed as **"SuperCreativePeople"** (name only, no EIN, no entity linkage). SCP Inc. is the one entity deliberately excluded from every program application, so having it named on the infrastructure is a needless inconsistency. **Decision: strip the SCP name now; do not replace with Frisson until Frisson has a payment instrument.** Do not touch GCP billing account `019309-BEB782-398472` while the Google for Startups application is under review.
 
 Full analysis, the company-dependent asset list, and the open items live in `studioyou-backend/SERVICES.md`.
+
+## Hosting row added 2026-08-09 (was missing entirely)
+
+| Service | Category | Purpose | Billing Entity | Account Standing | Asset Class | Console URL | Subscription / Tier | Credential Location | Status | Last Verified |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Netlify - project `studioyou` | Distribution/Deploy | **Serves studioyou.studio**, the live sign-in path. Site id 9a3000fb-dbf1-4922-b72c-20600a4e2bf4, current deploy ready | Lee (personal) | Unconfirmed | Company-dependent | app.netlify.com/projects/studioyou | nf_team_dev under the Pro team | Netlify login | Active | 2026-08-09 |
+
+Verified live via the Netlify API 2026-08-09. This repo previously listed Resend, Supabase, and the domain but not the thing actually hosting it.
+
+**Domain registrar confirmed:** Porkbun, in Lee's name with SCP as company name. Renewal date still unknown, which for a domain in the sign-in path is the outstanding exposure.
+
+**Netlify team naming:** the team is named `SuperCreativePeople` (slug `supercreativepeople`, id 6961b4975f419aae0d9ba3dc). Account-level, slug in every admin URL, so renaming is not a quick field edit. See `studioyou-backend/SERVICES.md`.
